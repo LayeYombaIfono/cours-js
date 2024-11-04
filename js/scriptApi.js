@@ -7,7 +7,6 @@ async function getData() {
   messageUpload.style.textAlign = "center";
   messageUpload.style.fontWeight = "bold";
   try {
-
     const messageUploadData = "Les donnees en cours de chargement ..........";
     messageUpload.innerText = messageUploadData;
     main.append(messageUpload);
@@ -28,6 +27,7 @@ async function getData() {
     if (!response.ok) {
       let messageErreurChargeArticle = "Impossible de charger les articles";
       messageUpload.innerText = messageErreurChargeArticle;
+      return messageErreurChargeArticle;
     }
 
     setInterval(() => {
@@ -47,8 +47,9 @@ async function getData() {
     }, 4000);
   } catch (error) {
     let messageFromSever = "Page not found erreur 404............";
-
     messageUpload.innerText = messageFromSever;
+
+    return messageFromSever;
   }
 }
 
