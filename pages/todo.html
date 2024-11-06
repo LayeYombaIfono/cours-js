@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="../css/todolist.css">
+    <script src="../js/js-todolist/main.js" type="module" defer></script>
+</head>
+<body>
+<!-- header -->
+    <header id="header">
+        <div class="logo">
+            <a href="#">Hamilafa-tech</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- header -->
+<section class="container" id="todoList">
+    <div id="alert"></div>
+    <form class="todo-form">
+        <input type="text" placeholder="Ajouter une tache" required id="todo">
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <main class="main">
+        <div class="btn-group">
+            <button type="button" id="all" class="active">Toutes</button>
+            <button type="button" id="pending">A faire</button>
+            <button type="button" id="completed">Faites</button>
+        </div>
+
+        <ul id="todo-list">
+
+        </ul>
+    </main>
+
+
+</section>
+
+
+</body>
+</html>

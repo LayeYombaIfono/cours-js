@@ -7,7 +7,7 @@ async function getData() {
   messageUpload.style.textAlign = "center";
   messageUpload.style.fontWeight = "bold";
   try {
-    const messageUploadData = "Les donnees en cours de chargement ..........";
+    const messageUploadData = "Les données en cours de chargement ..........";
     messageUpload.innerText = messageUploadData;
     main.append(messageUpload);
 
